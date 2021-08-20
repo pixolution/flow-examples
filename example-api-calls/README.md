@@ -4,7 +4,7 @@ This example script contains several requests to showcase how to interact with t
 
 ### Requirements
 To run this example you have the pixolution Flow docker image up and running and have a terminal with the Python virtual environment activated.
-Follow the steps described in the [README.md](../) in project root.
+Follow the steps described in the [README.md](../README.md) in project root.
 
 
 ## Usage

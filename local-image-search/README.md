@@ -16,7 +16,7 @@ This example ships with a frontend search interface written in plain HTML + JS.
 
 
 ### Requirements
-Follow the steps described in the [README.md](../) in project root.
+Follow the steps described in the [README.md](../README.md) in project root.
 
 
 ## Index images
