@@ -19,7 +19,7 @@ You have a working Python 3.8 environment and a installation of [Docker](https:/
 We use the free version of pixolution Flow so you can start right away (no registration). You can index up to 5000 images. If you exceed the limit pixolution Flow rejects adding more images. You can then upgrade to the [Professional Plan](https://pixolution.org/pricing).
 
 ### Docker
-Download and start the the pixolution Flow image:
+Download and start the pixolution Flow image:
 
 ```bash
 docker pull pixolution/flow
@@ -32,7 +32,7 @@ We assume you already have cloned this Git repo. We recommend creating a new Pyt
 ```bash
 python -m venv flow-examples/venv
 ```
-Go to project root and activate the virtual environement
+Go to project root and activate the virtual environment
 ```bash
 cd flow-examples
 source venv/bin/activate
