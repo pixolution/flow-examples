@@ -30,7 +30,7 @@ docker run -p8983:8983 pixolution/flow
 ### Python
 We assume you already have cloned this Git repo. We recommend creating a new Python virtual environment to have a clean installation of the examples and prevent dependency conflicts.
 ```bash
-python -m venv flow-examples/venv
+python3 -m venv flow-examples/venv
 ```
 Go to project root and activate the virtual environment
 ```bash
@@ -39,8 +39,8 @@ source venv/bin/activate
 ```
 Upgrade pip and install the python dependencies
 ```bash
-pip install --upgrade pip
-pip install -r requirements.txt
+pip3 install --upgrade pip
+pip3 install -r requirements.txt
 ```
 That's it! Now, choose an example your would like to test.
 
