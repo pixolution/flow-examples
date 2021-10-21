@@ -34,7 +34,7 @@ function randomColor() {
 function randomColorSearch(){
   color = randomColor();
   document.getElementById("color-palette").style.color = "#"+color;
-  getJSON(`${backendUrl}?rows=8&rank.by=hex:0x${color}&rank.mode=color`, showSearchResults);
+  getJSON(`${backendUrl}?rows=8&rank.by=hex:0x${color}&rank.mode=color&rank.threshold=0.4`, showSearchResults);
 }
 
 function randomImageSearch(){
@@ -134,7 +134,7 @@ function showJson(json){
 }
 
 function searchImages(id){
-  getJSON(`${backendUrl}?rows=8&rank.by=id:${id}&rank.mode=default`, showSearchResults);
+  getJSON(`${backendUrl}?rows=8&rank.by=id:${id}&rank.mode=default&rank.threshold=0.4`, showSearchResults);
 }
 
 
