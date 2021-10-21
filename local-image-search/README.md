@@ -23,13 +23,13 @@ Follow the steps described in the [README.md](../README.md) in project root.
 The script automatically indexes 500 web images from [picsum.photos](https://picsum.photos) when called without parameters:
 
 ```bash
-python add_images.py
+python3 add_images.py
 ```
 
 OR provide a local directory path:
 
 ```bash
-python add_images.py /path/to/your/local/images
+python3 add_images.py /path/to/your/local/images
 ```
 The script then collects all `.jpg`, `.png` and `.gif` image files within the given folder and index them.
 Depending on your hardware and the number of images the indexing process may take some time.
