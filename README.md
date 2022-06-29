@@ -14,7 +14,7 @@ Some useful resources to get more insights.
 
 ## Installation
 
-You have a working Python 3.8 environment and a installation of [Docker](https://docs.docker.com/get-docker/).
+You have a working Python 3.8+ environment and a installation of [Docker](https://docs.docker.com/get-docker/).
 
 We use the free version of pixolution Flow so you can start right away (no registration). You can index up to 5000 images. If you exceed the limit pixolution Flow rejects adding more images. You can then upgrade to the [Professional Plan](https://pixolution.org/pricing).
 
@@ -23,7 +23,7 @@ Download and start the pixolution Flow image:
 
 ```bash
 docker pull pixolution/flow
-docker run -p8983:8983 pixolution/flow
+docker run --rm -p8983:8983 pixolution/flow
 ```
 
 
@@ -42,15 +42,21 @@ Upgrade pip and install the python dependencies
 pip3 install --upgrade pip
 pip3 install -r requirements.txt
 ```
+
+The [Pillow](https://pypi.org/project/Pillow/) python library may require the jpeg development header installed on the host system. For example in Debian/Ubuntu you may need to install:
+```
+apt install libjpeg-dev zlib1g-dev
+```
+
 That's it! Now, choose an example your would like to test.
 
 
 ## Choose an example
 
-### [Local image search](local-image-search/README.md)
+### [Build a local image search server 	&#10142;](local-image-search/README.md)
 Index your local images into pixolution Flow and search for similar images with a shiny HTML search interface.
 
 ![user interface screenshot](./local-image-search/ui/img/local-image-search.gif )
 
-### [Example API calls](example-api-calls/README.md)
+### [Dive into example API calls	&#10142;](example-api-calls/README.md)
 Plain HTTP API calls without boilerplate code.
