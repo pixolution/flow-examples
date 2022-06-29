@@ -31,7 +31,10 @@ def init():
 def clear_index():
     print("Clear index...")
     payload = {"delete":{"query":"*:*" }}
-    response = requests.post(SERVER_URL+"/update?commit=true", json=payload)
+    response = requests.post(SERVER_URL+"/update?commit=true&openSearcher=true", json=payload)
+
+def commit():
+    requests.get(SERVER_URL+"/update?commit=true&openSearcher=true")
 
 def random_images(count):
     urls = []
@@ -72,6 +75,8 @@ def index_images(directory):
                     close_threadpool(futures, pool)
                     print(f.exception())
                     return
+        # Commit updated index to make it visible
+        commit()
         if errors>0:
             print(f"{errors}/{len(futures)} images could not be indexed.")
         print("Click or copy the link to open the search UI in your browser:")
